@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body{
+    background-color: F6FFF8;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+/*header start*/
+
+div > a{
+    text-decoration: none;
+    color: black;
+}
+
+div > a > h1{
+    font-size: 25px;
+}
+
+#header{
+    position: absolute;
+    width: 90%;
+    height: 15%;
+    left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Lily Script One';
+    font-weight: 100;
+    flex: wrap;
+    min-width:700px;
+}
+
+#header > div > h1{
+    font-size: 24px;
+}
+
+.logo{
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.person-icon{
+    width: 60px;
+}
+
+.border{
+    width: 220px;
+    height: 65px;
+    background-color: #CCE3DE;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/*header end*/
+
+/*Slider start*/
+.slider{
+    margin: 11%;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #333B3D;
+    border-radius: 50px;
+    border: 10px #CCE3DE solid;
+}
+  
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    padding-left: 155px;
+    width: 500px;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 500px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+}
+
+.manual-btn{
+    border: 2px solid #677174;
+    width: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #677174;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    margin-top: 460px;
+    margin-left: 140px;
+}
+
+.navigation-auto div{
+    border: 2px solid #677174;
+    padding: 5px;
+    width: 50px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #677174;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #677174;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #677174;
+}
+
+/*Slider end*/
+
+/*Search bar start*/
+.search-bar{
+    position: absolute;
+    width: 900px;
+    top: 750px;
+    display: flex;
+    margin-left: 10px;
+}
+
+#search-icon{
+    width: 50px;
+    padding-left: 100px;
+}
+
+#bar{
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    margin-left: 170px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.6);;
+    background: #D9D9D9;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+/*Search bar end*/
+
+/*Category start*/
+.category{
+    position: absolute;
+    flex: display;
+    margin-top: 870px;
+    height: 255px;
+}
+
+.category-group{
+    display: flex;
+    flex-direction: row;
+    column-gap: 70px;
+}
+
+#category-items{
+    width: 140px;
+    height: 140px;
+    background-color: #6B9080;
+    border-radius: 25px;
+}
+
+#category-text{
+    padding-top: 48px;
+    text-align: center;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 28px;
+} 
+
+/*Category end*/
+
+/*popular statr*/
+.popular{
+    position: absolute;
+    flex: display;
+    margin-top: 1200px;
+    background-color: #333B3D;
+    height: 450px;
+    text-align: center;
+    color: #D9D9D9;
+    border-radius: 50px;
+}
+
+.popular-group{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+#popular-img{
+    width: 212px;
+    height: 305px;
+    border-radius: 25px;
+}
+
+.popular > p{
+    color: black;
+}
+/*popular end*/
