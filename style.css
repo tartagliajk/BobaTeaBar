@@ -1,4 +1,6 @@
+/*fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
 
 body{
     background-color: F6FFF8;
@@ -231,10 +233,9 @@ div > a > h1{
 /*popular statr*/
 .popular{
     position: absolute;
-    flex: display;
-    margin-top: 1200px;
+    margin-top: 1220px;
     background-color: #333B3D;
-    height: 450px;
+    height: 380px;
     text-align: center;
     color: #D9D9D9;
     border-radius: 50px;
@@ -243,19 +244,70 @@ div > a > h1{
 .popular-group{
     display: flex;
     flex-direction: row;
-    column-gap: 50px;
+    column-gap: 40px;
     margin-left: 50px;
     margin-right: 50px;
 
 }
 
 #popular-img{
-    width: 212px;
-    height: 305px;
+    width: 150px;
+    height: 220px;
+    border-radius: 25px;
+    display: block;
+}
+
+.popular-text{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    gap: 5%;
+}
+
+.popular-text > p{
+    padding-top: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    color: #DEDEDE;
+    background: #1E1E1E;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+/*popular end*/
+
+/*costumer pics start*/
+.costumer{
+    position: absolute;
+    width: 1051px;
+    height: 450px;
+    top: 1700px;
+    color: #7F8A8D;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-style: thin;
+    text-align: center;
+}
+
+.costumer-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.costumer-group > div > img{
+    width: 250px;
+    height: 250px;
     border-radius: 25px;
 }
 
-.popular > p{
-    color: black;
+.costumer-text{
+    width: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 130px;
+    font-size: 19px;
 }
-/*popular end*/
+/*costumer pics end*/
