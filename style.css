@@ -9,9 +9,13 @@ body{
     background-color: #f5f5f5;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*header start*/
 
-div > a{
+div > #header > div > a{
     text-decoration: none;
     color: black;
 }
@@ -61,7 +65,7 @@ div > a > h1{
 /*header end*/
 
 /*Slider start*/
-.slider{
+.sliders{
     margin: 11%;
     width: 800px;
     height: 500px;
@@ -93,7 +97,7 @@ div > a > h1{
     height: 500px;
 }
 
-/*css for manual slide navigation*/
+/*manual slide navigation*/
 
 .navigation-manual{
     position: absolute;
@@ -174,20 +178,20 @@ div > a > h1{
 .search-bar{
     position: absolute;
     width: 900px;
-    top: 750px;
+    top: 760px;
     display: flex;
     margin-left: 10px;
 }
 
 #search-icon{
-    width: 50px;
+    width: 40px;
     padding-left: 100px;
 }
 
 #bar{
     position: absolute;
     width: 600px;
-    height: 50px;
+    height: 40px;
     margin-left: 170px;
     padding-left: 20px;
     color: rgba(0, 0, 0, 0.6);;
@@ -203,7 +207,7 @@ div > a > h1{
 .category{
     position: absolute;
     flex: display;
-    margin-top: 870px;
+    margin-top: 840px;
     height: 255px;
 }
 
@@ -214,18 +218,18 @@ div > a > h1{
 }
 
 #category-items{
-    width: 140px;
-    height: 140px;
+    width: 110px;
+    height: 100px;
     background-color: #6B9080;
     border-radius: 25px;
 }
 
 #category-text{
-    padding-top: 48px;
+    padding-top: 40px;
     text-align: center;
     color: white;
     font-family: 'Lora', serif;
-    font-size: 28px;
+    font-size: 20px;
 } 
 
 /*Category end*/
@@ -233,7 +237,7 @@ div > a > h1{
 /*popular statr*/
 .popular{
     position: absolute;
-    margin-top: 1220px;
+    margin-top: 1180px;
     background-color: #333B3D;
     height: 380px;
     text-align: center;
@@ -261,53 +265,148 @@ div > a > h1{
     width: auto;
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
-    gap: 5%;
+    margin-left: 39px;
+    gap: 22px;
 }
 
 .popular-text > p{
     padding-top: 10px;
-    width: 150px;
+    width: 170px;
     height: 30px;
     border-radius: 25px;
     color: #DEDEDE;
     background: #1E1E1E;
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Lora', serif;
     text-align: center;
     font-size: 15px;
 }
 /*popular end*/
 
-/*costumer pics start*/
-.costumer{
+/*costumer reviews start*/
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card*/
+#reviews-text{
     position: absolute;
-    width: 1051px;
+    top: 1700px;
+    color:#6B9080;
+    font-family: 'Lora', serif;
+
+}
+
+.reviews{
+    position: absolute;
+    width: 90%;
     height: 450px;
     top: 1700px;
-    color: #7F8A8D;
+    color: #6B9080;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-style: thin;
-    text-align: center;
+    display: flex;
+    margin-left: 10%;
 }
 
-.costumer-group{
+.reviews-group{
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    width: 60%;
+
 }
 
-.costumer-group > div > img{
-    width: 250px;
-    height: 250px;
-    border-radius: 25px;
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0px 4px 4px rgba(117, 239, 237, 0.25);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    background-color: #6B9080;;
+    color: black;
+    border-radius: 15px;
+
+}
+  
+.flip-card-back {
+    background-color: #A4C3B2;
+    color: rgba(255, 255, 255, 0.97);
+    transform: rotateY(180deg);
+    border-radius: 15px;
 }
 
-.costumer-text{
-    width: 780px;
+.flip-card-back > p{
+    margin: 0px 10px 10px 20px;
+}
+
+#grade{
+    color: #4a5852;
+}
+
+.flip-card-back > h2{
+    margin: 30px 10px 0px 10px;
+}
+
+/*costumer reviews end*/
+
+/*footer start*/
+.footer{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 130px;
-    font-size: 19px;
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    top: 2300px;
+    background-color: #333B3D;
+    font-family: 'IBM Plex Sans KR';
 }
-/*costumer pics end*/
+
+.footer-group{
+    padding-left: 120px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.footer-group > a > img{
+    margin: 60px 0px 0px 17%;
+    width: 45px;
+    height: 45px;
+}
+
+#footer-text{
+    margin-left: -810px;
+    margin-top: 8%;
+    color: white;
+    display: flex; 
+    gap: 10px;
+}
+
+#footer-text > a{
+    color: white;
+    text-decoration: none;
+}
+
+#credit-text{
+    margin-top: 12%;
+    margin-left: -157px;
+    color: rgba(255, 255, 255, 0.2);
+}
+/*footer end*/

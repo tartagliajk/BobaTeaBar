@@ -36,8 +36,9 @@
 </div>
 <!--Header end-->
 
+<!--https://www.codingsnow.com/2021/01/image-slider-with-auto-play-manual.html (slideshow)-->
 <!--image slider start-->
-<div class="slider">
+<div class="sliders">
     <div class="slides">
         <!--radio buttons start-->
         <input type="radio" name="radio-btn" id="radio1">
@@ -145,33 +146,84 @@
 </div>
 <!--popular end-->
 
-<!--costumer pics start-->
-<div class="costumer">
-    <div>
-        <h1>Costumer pictures</h1>
+<!--reviews start-->
+<div id="reviews-text">
+    <h1>Costumer reviews</h1>
+</div>
+<div class="reviews">
+    <div class="reviews-group">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/labb boba.png" alt="labb boba" style="width:250px;height:250px; margin-left: 25px; margin-top: 25px; border-radius: 25px;">
+              </div>
+              <div class="flip-card-back">
+                <h2>Dr. Dottore</h2> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat nostrum eaque minima corporis assumend. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti soluta asperiores voluptas.</p> 
+                <p id="grade">9.5 / 10</p>
+              </div>
+            </div>
+        </div>
     </div>
-    <div class="costumer-group">
-        <div>
-            <img src="images/labb boba.png" alt="labb bob">
-        </div>
-        <div>
-            <img src="images/bear boba.png" alt="bear boba">
-        </div>
-        <div>
-            <img src="images/lamp boba.png" alt="lamp boba">
+    <div class="reviews-group">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/bear boba.png" alt="bear boba" style="width:250px;height:250px; margin-left: 25px; margin-top: 25px; border-radius: 25px;">
+              </div>
+              <div class="flip-card-back">
+                <h2>Ciel ミ★</h2> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat nostrum eaque minima corporis assumend. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti soluta asperiores voluptas.</p> 
+                <p id="grade">10 / 10</p>
+              </div>
+            </div>
         </div>
     </div>
-    <div class="costumer-text">
-        <div>
-            <p>@Anka</p>
-        </div>
-        <div>
-        </div>
-        <div>
-            <p>@B.M.</p>
+    <div class="reviews-group">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/lamp boba.png" alt="lamp boba" style="width:250px;height:250px; margin-left: 25px; margin-top: 25px; border-radius: 25px;">
+              </div>
+              <div class="flip-card-back">
+                <h2>BobaLover123</h2> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat nostrum eaque minima corporis assumend. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti soluta asperiores voluptas.</p> 
+                <p id="grade">9 / 10</p>
+              </div>
+            </div>
         </div>
     </div>
 </div>
+<!--reviews end-->
+
+<!--Fotter start-->
+<footer class="footer">
+    <div class="footer-group">
+        <a href="https://www.instagram.com">
+            <img src="images/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.twitter.com">
+            <img src="images/twitter.png" alt="twitter">
+        </a>
+        <a href="https://www.facebook.com">
+            <img src="images/facebook.png" alt="facebook">
+        </a>
+    </div>
+    <div id="footer-text">
+        <a href="menu.html">
+            <p>Menu</p>
+        </a>
+        <p>||</p>
+        <a href="contact.html">
+            <p>Contact</p>
+        </a>
+        <p>||</p>
+        <a href="myOrders.html">
+            <p>Orders</p>
+        </a>
+    </div>
+    <p id="credit-text">©MilkTeaBar</p>
+</footer>
 
 </body>
 </html>
