@@ -44,9 +44,12 @@ div > a > h1{
 }
 
 .logo{
-    width: 100px;
-    margin-top: 10px;
-    border-radius: 10px;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: -150px;
+    margin-right: 10px;
+    border: #CCE3DE 4px solid;
+    border-radius: 100%;
 }
 
 .person-icon{
@@ -318,6 +321,13 @@ div > a > h1{
     height: 300px;
     perspective: 1000px;
 }
+
+.flip-card-arrow{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 268px;
+    font-size: 22px;
+}
   
 .flip-card-inner {
     position: relative;
@@ -392,7 +402,7 @@ div > a > h1{
 }
 
 #footer-text{
-    margin-left: -810px;
+    margin-left: -830px;
     margin-top: 8%;
     color: white;
     display: flex; 
@@ -406,7 +416,7 @@ div > a > h1{
 
 #credit-text{
     margin-top: 12%;
-    margin-left: -157px;
+    margin-left: -145px;
     color: rgba(255, 255, 255, 0.2);
 }
 /*footer end*/
