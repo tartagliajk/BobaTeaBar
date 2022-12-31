@@ -3,7 +3,7 @@
 .contact-container{
     position: absolute;
     top: 210px;
-    width: 70%;
+    width: 60%;
     height: 10px;
     border-top: 6px solid #4B675B;
 }
@@ -30,7 +30,7 @@
 
 .gray-container{
     position: absolute;
-    width: 100%;
+    width: 900px;
     height: 770px;
     top: 50px;
     background: #677174;
@@ -125,6 +125,8 @@
     position: absolute;
     left: 80px;
     top: 450px;
+    max-width: 350px;
+    max-height: 190px;
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
